@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <title><%= config.meta.title %></title>
+    <meta name="description" content="<%= config.meta.title %>">
+    <link href="/css/app.css<%= '?ver=' + config.assets.app.css.updated_at %>" rel="stylesheet" type="text/css">
+    <!--<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
+</head>
+<body data-spy="scroll">
+    <div id="app">
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!--<a class="logo_mb navbar-brand" href="/"><img src="/images/logo_s.gif"></a></li>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>-->
+
+                        <!-- pc menu -->
+                        <div class="menu-pc">
+                            <ul>
+                                <li class="logo"><a href="/"><img src="/images/logo_s.gif"></a></li>
+                                <li class="menu-pc-item"><a href="#info" class="square_btn3">会社情報</a></li>
+                                <li class="menu-pc-item"><a href="#" class="square_btn3">社長挨拶</a></li>
+                                <li class="menu-pc-item"><a href="#" class="square_btn3">事業内容</a></li>
+                                <li class="menu-pc-item"><a href="#" class="square_btn3">アクセス</a></li>
+                                <li class="menu-pc-item"><a href="#" class="square_btn3">採用情報</a></li>
+                                <li class="logo menu-mobile"><a href="/"><img src="/images/name_s.gif"></a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-mobile navbar-default">
+                            <ul class="navbar-left">
+                                <li class=""><a href="#info" class="square_btn"><i class="fa fa-caret-right"></i>会社情報</a></li>
+                                <li class=""><a href="#" class="square_btn"><i class="fa fa-caret-right"></i>社長挨拶</a></li>
+                                <li class=""><a href="#" class="square_btn"><i class="fa fa-caret-right"></i>事業内容</a></li>
+                                <li class=""><a href="#" class="square_btn"><i class="fa fa-caret-right"></i>アクセス</a></li>
+                                <li class=""><a href="#" class="square_btn"><i class="fa fa-caret-right"></i>採用情報</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>

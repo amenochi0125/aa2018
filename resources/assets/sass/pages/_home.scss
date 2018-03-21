@@ -1,0 +1,131 @@
+#home {
+    p {
+        color: crimson;
+        font-size: 24px;
+    }
+}
+
+
+#company_info{
+    margin-top:80px;
+
+    img{
+        max-width: 1200px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #index_top{
+        text-align: center;
+        border-radius: 3px;
+        background: white;
+    }
+}
+
+tr{
+    padding: 10px;
+
+    td{
+        color: #333;
+        padding: 10px;
+        border: 1px solid white;
+    }
+
+    td:first-child{
+        background:#DDD;
+        font-weight: bold;
+        text-align: center;
+        /*border-left: solid 6px #6074ce;*/
+    }
+}
+
+#in-tbl{
+    td{
+        border: 1px solid #9CF;
+        background:white;
+        padding: 5px;
+    }
+}
+
+#info{
+    
+}
+
+#sign{
+    #sign_1{
+        float:left;
+        padding-top: 8px;
+        padding-right: 10px;
+    }
+    #sign_2{
+        float:right;
+    }
+}
+
+.well{
+    background: white;
+}
+
+p.mes-text{
+    max-width: 490px;
+    word-break: break-word;
+}
+
+.message-new{
+    margin-bottom: 25px;
+}
+
+.mes-img-left{
+    margin: 0;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: -70px;
+
+    p{
+        max-width: 490px;
+        
+        .mes-text{
+            margin: 0 0 20px;
+        }
+    
+        .mes-text:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.mes-text-right{
+    position: relative;
+    margin-left: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(78, 159, 161);
+    margin-right: 12%;
+    float: left;    
+    color: white;
+    max-width: 500px;
+    /*width: 100%;*/
+}
+
+.mes-text-right:before{
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    top: 15px;
+    left: -20px;
+}
+
+.mes-text-right:after {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid rgb(78, 159, 161);
+    top: 15px;
+    left: -19px;
+}
+
+P{
+    color: black;
+}
+

@@ -1,0 +1,168 @@
+body{
+    background: white;
+}
+
+.navbar{
+    max-width: 1200px;
+    min-width: 400px;
+    background-color: #FFF;
+    border: none;
+    margin: 0 auto;
+
+}
+
+.navbar-header{
+    width: 100%;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+
+    .menu-mobile{
+        display: none;
+    }
+    
+    .menu-pc{
+        ul{
+            li:first-child{
+                margin-right: auto;
+            }
+        }
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+
+        li{
+            text-align: center;
+            /*background-color: #cf9;*/
+            border-radius: 3px;
+            padding: 2px 2px;
+            margin-top: 5px;
+            margin-left:5px;
+        }
+
+        img{
+            width: 60%;
+        }
+    }
+
+    .square_btn{
+        display: inline-block;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        color: #67c5ff;
+        border: solid 2px #67c5ff;
+        border-radius: 3px;
+        transition: .4s;
+    }
+
+    .square_btn:hover{
+        background: #67c5ff;
+        color: white;
+    }
+
+    .square_btn2{
+        position: relative;
+        display: inline-block;
+        font-weight: bold;
+        padding: 0.25em 0.5em;
+        text-decoration: none;
+        color: #00BCD4;
+        background: #ECECEC;
+        transition: .4s;
+        border-radius: 3px;
+    }
+
+    .square_btn2:hover{
+        background: #00bcd4;
+        color: white;
+    }
+
+    .square_btn3{
+        margin-top:10px;
+        position: relative;
+        display: inline-block;
+        font-weight: bold;
+        padding: 0.25em 0;
+        text-decoration: none;
+        color: #45a4aa;     
+    }
+
+    .square_btn3:before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 4px;
+        top:100%;
+        left: 0;
+        border-radius: 3px;
+        background:#67c5ff;
+        transition: .2s;
+     }
+     
+     .square_btn3:hover:before {
+         top: -webkit-calc(100% - 3px);
+         top: calc(100% - 3px);
+     }
+}
+
+/*@media screen and (max-width: 767px){*/
+@media screen and (max-width: 600px){
+.navbar-header{
+
+    .menu-pc{
+        ul{
+
+            padding: 0px;
+
+            .menu-pc-item{
+                display: none;
+            }
+        }
+    }
+
+    .menu-mobile{
+        display: block;
+
+        ul{
+            justify-content: space-around;
+            li:first-child{
+                margin-left: 15px;
+            }
+
+            /*li{
+                background-color: rgb(89, 143, 224);
+                
+                a{
+                    color: #FFF;
+                    padding: 3px;
+                }
+
+
+            }
+            li:hover{
+                background-color: rgb(109, 163, 244);
+                a{
+                    color: #333;
+                }
+            }*/
+
+            padding: 0px;
+        }
+    }
+
+    /*ul{
+        li{
+            padding : 0px;
+        }
+    }*/
+}
+}
+
+/*@media screen and (max-width: 450px){
+    .menu-mobile{
+        li{
+            font-size: 0.9em;
+        }
+    }
+}*/
